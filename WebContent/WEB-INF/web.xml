@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Student1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+    <!--
+     	<resource-ref>
+      	 	<description>DataSource</description>
+      		<res-ref-name>student</res-ref-name>
+      		<res-type>javax.sql.DataSource</res-type>
+      		<res-auth>Container</res-auth>
+  		</resource-ref>
+  	-->
+  
+  
+  <servlet>
+    <servlet-name>AddStudent</servlet-name>
+    <servlet-class>org.lanqiao.servlet2.AddStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudent</servlet-name>
+    <url-pattern>/AddStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>deleteStudent</servlet-name>
+    <servlet-class>org.lanqiao.servlet2.DeleteStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteStudent</servlet-name>
+    <url-pattern>/DeleteStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>updateStudent</servlet-name>
+    <servlet-class>org.lanqiao.servlet2.UpdateStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateStudent</servlet-name>
+    <url-pattern>/UpdateStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>QueryAllStudentsServlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet2.QueryAllStudentsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryAllStudentsServlet</servlet-name>
+    <url-pattern>/QueryAllStudentsServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <servlet-name>loginUser</servlet-name>
+    <servlet-class>org.lanqiao.servlet2.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginUser</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>QueryStudentByNoServlet</servlet-name>
+    <servlet-class>org.lanqiao.servlet2.QueryStudentByNoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryStudentByNoServlet</servlet-name>
+    <url-pattern>/QueryStudentByNoServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
